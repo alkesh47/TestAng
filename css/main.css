@@ -1,5 +1,14 @@
+/**{
+
+  border: 0.5px solid;
+}*/
+
 body{
-  background-color: white
+  background-color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-style: thin;
 }
 
 }
@@ -9,59 +18,126 @@ body{
   }
 
 header{
-  background-color: grey;
+  /*background-color: grey;*/
   display: flex;
 }
+/*.one-edge-shadow {
+	-webkit-box-shadow: 0 18px 6px -6px red;
+	   -moz-box-shadow: 0 18px 6px -6px red;
+	        box-shadow: 0 18px 6px -6px red;
+}*/
 
-.SCGJLogo{
-  width: 200px;
-  background-color: green;
+.leftContent{
+  /*width: 30%;
+  height: 100px;
+  background-color: green;*/
   /*height: 30%;
   width: 30%;*/
 }
 
+.rightContent{
+  width: 70%;
+  height: 100px;
+  text-align: end;
+}
+
+.logout-wrapper{
+  padding-top: 40px;
+}
+
+.username{
+  color: black;
+  font-size: 14px;
+}
+
+.logoutText{
+  color: grey;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.logoutText:hover{
+  color: black;
+}
+
 .sidebar{
-  height: 500px;
-  width: 20%;
-  background-color: lightblue
+  /*height: 500px;*/
+  width: 25%;
+  background-color: #1fb1cb
+}
+
+hr{
+  border: 0.5px #1da5be solid;
+  margin: none;
+  /*padding: 10px;*/
+}
+
+.bar-wrapper{
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.bar-wrapper:hover{
+  background-color: #1da5be;
+}
+
+/*hr:hover{
+  background-color: #1da5be;
+}*/
+
+.icon{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 11px;
 }
 
 .mainContent{
   background-color: white;
   display: flex;
+  height: 600px;
 }
 .Content{
-  height: 500px;
+  /*height: 500px;*/
   width: 80%;
   background-color: lightgrey;
 }
 
 .logoBar{
   width: 100%;
-  height: 100px;
-  background-color: pink;
+  /*height: 100px;*/
+  background-color: white;
   display: flex;
+  text-align: center;
+}
+
+.image-wrap{
+  margin: auto;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.image-0{
+  width: 280px;
+  height: 112px;
 }
 
 .image-1{
-  height: 50px;
-  width: 50px;
-  background-color: red;
+  width: 120px;
+  height: 80px;
 }
-.image-2{
-  height: 50px;
-  width: 50px;
-  background-color: red;
+.image-2, .image-3, .image-4{
+  width: auto;
+  height: 80px;
+  margin-right: 25px;
 }
-.image-3{
-  height: 50px;
-  width: 50px;
-  background-color: red;
-}
-.image-4{
-  height: 50px;
-  width: 50px;
-  background-color: red;
+
+.image-1, .image-2, .image-3, .image-4{
+  margin-right: 45px;
 }
 
 footer{
@@ -70,14 +146,50 @@ footer{
 }
 
 .upperFooter{
-  background-color: lightblue;
+  background-color: #1fb1cb;
   height: 50px;
+  text-align: center;
 }
 
+.link-wrapper{
+  padding: 10px;
+}
+
+.link{
+  font-size: 12px;
+}
 .lowerFooter{
-  background-color: lightgreen;
+  background-color: #1da5be;
   height: 30px;
+  text-align: center;
+}
+
+.copyright{
+  padding-top: 7px;
+  font-size: 11px;
+  pointer-events: none;
 }
 h4,h5{
   margin: 0 0;
+  color: white;
+}
+
+h2,h3{
+  margin: 0;
+}
+h6{
+  margin: 0;
+  color: grey;
+}
+
+a{
+  padding: 10px;
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+}
+a:hover{
+  color: lightgrey;
 }

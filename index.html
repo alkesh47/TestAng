@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
 
     <!-- <script src="/release/ui-grid.js"></script>
     <script src="/release/ui-grid.css"></script> -->
@@ -11,18 +14,21 @@
 
     </script>
   </head>
-  <header>
+  <header class="one-edge-shadow">
     <div class="leftContent">
-      <img src="" alt="" class="SCGJLogo">
+      <img src="/images/SCGJLogo.png" alt="" class="image-0">
     </div>
 
     <div class="rightContent">
-      <div class="username">
-        <h4>Divyanshu Bhushan</h4>
+      <div class="logout-wrapper">
+        <div class="username">
+          <h2 class="username">Divyanshu Bhusan</h2>
+        </div>
+        <div class="logoutButton">
+          <h5 class="logoutText">Logout</h5>
+        </div>
       </div>
-      <div class="logoutButton">
-        <h5>Logout</h5>
-      </div>
+
     </div>
   </header>
 
@@ -30,19 +36,58 @@
     <div class="mainContent">
       <div class="sidebar">
 
+        <div class="bar-wrapper">
+          <div class="icon"></div>
+          <div class="text">Dashboard</div>
+        </div>
+
+        <hr>
+        <div class="bar-wrapper">
+          <div class="icon"></div>
+          <div class="text">Manage Registrations</div>
+        </div>
+
+        <hr>
+        <div class="bar-wrapper">
+          <div class="icon"></div>
+          <div class="text">Import</div>
+        </div>
+
+        <hr>
+        <div class="bar-wrapper">
+          <div class="icon"></div>
+          <div class="text">FAQ's</div>
+        </div>
+
+        <hr>
+        <div class="bar-wrapper">
+          <div class="icon"></div>
+          <div class="text">Batch Assignment</div>
+        </div>
+        <hr>
       </div>
 
       <div class="Content">
-
+        <!-- Tables -->
       </div>
     </div>
 
 
     <div class="logoBar">
-      <div class="image-1">Image1</div>
-      <div class="image-2">Image2</div>
-      <div class="image-3">Image3</div>
-      <div class="image-4">Image4</div>
+      <div class="image-wrap">
+        <img src="/images/SkillMinistryLogo.png" alt="" class="image-1">
+
+
+        <img src="/images/SkillIndiaLogo.png" alt="" class="image-2">
+
+
+        <img src="/images/NSDCLogo.png" alt="" class="image-3">
+
+
+        <img src="/images/RenewableMinistryLogo.png" alt="" class="image-4">
+      </div>
+
+
     </div>
 
   </body>
@@ -50,16 +95,18 @@
 
   <footer>
     <div class="upperFooter">
-      <a href="">About Us</a>
-      <a href="">Industry Connect</a>
-      <a href="">National Standards</a>
-      <a href="">Affliation</a>
-      <a href="">Publications</a>
-      <a href="">State Linkages</a>
+      <div class="link-wrapper">
+        <a href="" class="link">About Us</a> |
+        <a href="" class="link">Industry Connect</a> |
+        <a href="" class="link">National Standards</a> |
+        <a href="" class="link">Affliation</a> |
+        <a href="" class="link">Publications</a> |
+        <a href="" class="link">State Linkages</a>
+      </div>
+
     </div>
 
     <div class="lowerFooter">
-      <h4>Copyright &copy 2016 sscgj.in - All Rights Reserved.</h4>
+      <h5 class="copyright">Copyright &copy 2016 sscgj.in - All Rights Reserved.</h5>
     </div>
   </footer>
-</html>
