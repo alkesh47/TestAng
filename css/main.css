@@ -21,11 +21,7 @@ header{
   /*background-color: grey;*/
   display: flex;
 }
-/*.one-edge-shadow {
-	-webkit-box-shadow: 0 18px 6px -6px red;
-	   -moz-box-shadow: 0 18px 6px -6px red;
-	        box-shadow: 0 18px 6px -6px red;
-}*/
+
 
 .leftContent{
   /*width: 30%;
@@ -68,13 +64,14 @@ header{
 
 hr{
   border: 0.5px #1da5be solid;
-  margin: none;
+  margin-top: 0;
+  margin-bottom: 0;
   /*padding: 10px;*/
 }
 
 .bar-wrapper{
   display: flex;
-  padding: 5px;
+  padding: 13px;
   cursor: pointer;
   color: white;
   font-size: 14px;
