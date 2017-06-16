@@ -50,6 +50,7 @@ header{
   color: grey;
   font-size: 10px;
   cursor: pointer;
+  margin-left: 611px;
 }
 
 .logoutText:hover{
