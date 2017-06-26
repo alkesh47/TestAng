@@ -1,14 +1,10 @@
-/**{
-
-  border: 0.5px solid;
-}*/
 
 body{
   background-color: white;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-  font-style: thin;
+  font-style: normal;
 }
 
 }
@@ -20,18 +16,20 @@ body{
 header{
   /*background-color: grey;*/
   display: flex;
-  /*max-width: 100%;*/
-  background-color: grey;
 }
 
-
+.mainContent{
+  background-color: white;
+  display: flex;
+  /*height: 600px;*/
+  min-height: 833px;
+}
 .leftContent{
   width: 25%;
-  /*background-color: aqua;*/
 }
 
 .image-0{
-  width: 100%;
+  width: 256px;
 }
 
 
@@ -40,26 +38,25 @@ header{
   width: 75%;
   height: 100px;
   text-align: end;
-  /*background-color: aquamarine;*/
+  padding-right: 10px;
 }
 
 .logout-wrapper{
   padding-top: 40px;
-  margin-left: 60%;
+  margin-right: 33px;
 }
 
 .username{
   color: black;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .icon-wrap{
-  /*background-color: blue;*/
+  margin-right: 4px;
 }
 
 .text-wrap{
   padding-top: 3px;
-  /*background-color: aqua;*/
 }
 .logout-icon{
   width: 12px;
@@ -69,76 +66,58 @@ header{
 .logout-icon-text-wrap{
   display: flex;
   float: right;
+  margin-right: 68px;
 }
 .logoutText{
-  color: black;
+  color: grey;
   font-size: 10px;
   cursor: pointer;
-  /*margin-left: 611px;*/
 }
 
 .logoutText:hover{
   color: black;
 }
 
+
+/*Sidebar Styles*/
 .sidebar{
-  /*height: 500px;*/
+
   width: 25%;
   background-color: #1fb1cb
 }
 
 hr{
-  border: 0.5px #1da5be solid;
+  border: none;
   margin-top: 0;
   margin-bottom: 0;
-  /*padding: 10px;*/
 }
 
-.bar-wrapper{
-  display: flex;
-  padding: 13px;
-  cursor: pointer;
-  color: white;
+.side-link{
   font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  padding: 0px;
 }
 
-.bar-wrapper:hover{
-  background-color: #1da5be;
-}
-
-/*hr:hover{
-  background-color: #1da5be;
-}*/
-
-.icon{
-  /*height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: white;
-  margin-right: 11px;*/
+.side-link:hover{
+  background-color: #0a90a8
 }
 
 .icons{
   height: 15px;
   width: 15px;
-  margin-right: 12px;
-  margin-top: 2px;
+  margin: 19px 15px -2px 21px;
 }
 
-.mainContent{
-  background-color: white;
-  display: flex;
-  height: 600px;
-}
+
 #Content{
-  /*height: 500px;*/
   width: 80%;
   background-color: lightgrey;
 }
 
 .logoBar{
   width: 100%;
-  /*height: 100px;*/
   background-color: white;
   display: flex;
   text-align: center;
@@ -151,7 +130,6 @@ hr{
 .image-wrap{
   margin: auto;
   background-color: white;
-  /*height: 100px;*/
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -159,7 +137,6 @@ hr{
 .image-1,.image-2, .image-3, .image-4{
   width: 110px;
   margin-right: 60px;
-  /*height: 80px;*/
 }
 
 img.image-3{
@@ -170,45 +147,42 @@ img.image-4{
   width: 150px;
   margin-right: 0px;
 }
-/*.image-2, .image-3, .image-4{
-  /*width: 100px;*/
-  /*height: 80px;*/
-  /*margin-right: 25px;*/
-}*/
-
-/*.image-1, .image-2, .image-3, .image-4{
-  margin-right: 45px;
-}*/
 
 
+/*Footer Design*/
 footer{
   width: 100%;
-  /*height: 200px;*/
+
 }
 
 .upperFooter{
   background-color: #1fb1cb;
-  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
-}
-
-.link-wrapper{
-  padding: 10px;
 }
 
 .link{
   font-size: 12px;
 }
+
+.vert-bars{
+  color: #ffffff;
+}
+
+.link-wrapper a:hover{
+  color: lightgrey;
+}
 .lowerFooter{
   background-color: #1da5be;
-  height: 30px;
   text-align: center;
 }
 
 .copyright{
-  padding-top: 7px;
+  padding: 7px 0px;
   font-size: 11px;
   pointer-events: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 h4,h5{
   margin: 0 0;
@@ -220,36 +194,19 @@ h2,h3{
 }
 h6{
   margin: 0;
-  color: grey;
+  color: #ffffff;
 }
 
 a{
   padding: 10px;
-  /*color: white;*/
-  color: black;
+  color: white;
 }
 
 a:link{
   text-decoration: none;
 }
-a:hover{
-  color: lightgrey;
-}
-
-/*@media only screen and(max-width: 880px) {
-  a{
-    color: white;
-  }
-  .image-1,.image-2, .image-3, .image-4{
-    width: 80px;
-    margin-right: 40px;
-  }
-}*/
 
 @media(max-width: 880px) {
-  a{
-    color: white;
-  }
   .image-1,.image-2, .image-3, .image-4{
     width: 80px;
     margin-right: 40px;
@@ -257,5 +214,56 @@ a:hover{
   img.image-4{
     width: 120px;
     margin-right: 0px;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .image-1,.image-2, .image-3, .image-4{
+    width: 60px;
+    margin-right: 25px;
+  }
+  img.image-4{
+    width: 100px;
+    margin-right: 0px;
+  }
+  .upperFooter{
+    background-color: #1fb1cb;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .username{
+    font-size: 12px;
+  }
+
+}
+
+@media(max-width: 490px) {
+  #Content{
+    width: 92%;
+  }
+  .sidebar{
+    width: 50px;
+  }
+
+  .icons{
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+  }
+
+  .text{
+    display: none;
+  }
+
+  .logout-icon{
+    width: 22px;
+  }
+
+  .text-wrap, .username{
+    display: none;
+    display: none;
   }
 }
