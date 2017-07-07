@@ -103,6 +103,9 @@ hr{
 .side-link:hover{
   background-color: #0a90a8
 }
+.side-link:focus{
+  background-color: #0a90a8
+}
 
 .icons{
   height: 15px;
